@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main Style */
+
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: #eaeaea;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 20px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 30px;
+}
+
+nav ul li a {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+nav ul li a:hover {
+	color: royalblue;
+	transition: .4s;
+}
+
+.logo {
+	color: #040A18;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+span {
+	color: #43758A;
+	font-weight: bold;
+}
+
+.contact-me-wrapper {
+	background-color: #05263B;
+	width: 100%;
+	height: 100vh;
+}
+
+.contact-me-form {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin: 0 auto;
+}
+
+.contact-me-form h2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+	font-size: 60px;
+	color: #ECF3FB;
+	border-bottom: 5px solid #43758A;
+	padding: 80px 0 30px 0;
+
+}
+
+form {
+	padding-top: 50px;
+}
+
+.form-position {
+	margin: 0 auto;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input[type=text], select, textarea {
+	width: 50%;
+    padding: 12px;
+    background-color: #ECF3FB;
+    border: 3px solid #43758A;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    resize: vertical;
+}
+
+input[type=email], select, textarea {
+	width: 50%;
+    padding: 12px;
+    background-color: #ECF3FB;
+    border: 3px solid #43758A;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+	background-color: #43758A;
+    color: #ECF3FB;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+	background-color: rgb(148, 97, 34);
+}
+
+textarea {
+	height: 200px;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #ECF3FB;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer p {
+	font-size: 30px;
+	color: #040A18;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.social {
+	display: flex;
+}
+
+.social a {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 0 45px;
+	border-radius: 50%;
+	margin: 22px 10px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.social a:hover {
+	transform: scale(1.4);
+	transition: .4s;
+}
+
+.end {
+	position: absolute;
+	color:#040A18;
+	padding-top: 190px;
+	font-size: 14px; 
+}
